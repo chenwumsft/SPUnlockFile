@@ -39,21 +39,19 @@ namespace SPUnlockFile.Layouts.SPUnlockFile
             var item = list.Items.GetItemById(int.Parse(strListItemId));
             var file = item.File;
 
-            SPSecurity.RunWithElevatedPrivileges(() =>
+            try
             {
-                try
+                if (file.LockId != null)
                 {
-                    if(file.LockId != null)
-                    {
-                        file.ReleaseLock(file.LockId);
-                        lblText.Text = file.ServerRelativeUrl + " has been unlocked";
-                        lbUnlock.Enabled = false;
-                    }
-                }catch(Exception ex)
-                {
-                    lblText.Text = ex.Message;
+                    file.ReleaseLock(file.LockId);
+                    lblText.Text = file.ServerRelativeUrl + " has been unlocked";
+                    lbUnlock.Enabled = false;
                 }
-            });
+            }
+            catch (Exception ex)
+            {
+                lblText.Text = ex.Message;
+            }
         }
     }
 }
