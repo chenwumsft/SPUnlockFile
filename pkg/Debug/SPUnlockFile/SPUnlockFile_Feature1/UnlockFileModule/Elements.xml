@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction
+      Id="{B0B5A0CB-7FBE-4dd6-9B2A-2B1E1321B8F9}"
+      RegistrationType="List"
+      RegistrationId="101"
+      Location="EditControlBlock"
+      Title="Unlock">
+    <UrlAction
+        Url="/_layouts/SPUnlockFile/UnlockFile.aspx?SPListItemId={ItemId}&amp;SPListId={ListId}"/>
+  </CustomAction>
+</Elements>

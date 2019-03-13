@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="SPUnlockFile Feature" Id="21113b7d-1872-4404-bfdb-871dddf6eeb1" Scope="Site">
+  <ElementManifests>
+    <ElementManifest Location="UnlockFileModule\Elements.xml" />
+  </ElementManifests>
+</Feature>

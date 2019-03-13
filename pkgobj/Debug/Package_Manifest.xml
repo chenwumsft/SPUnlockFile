@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="c235377a-d442-49b1-beb4-d308f0567f08" SharePointProductVersion="16.0">
+  <Assemblies>
+    <Assembly Location="SPUnlockFile.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\SPUnlockFile\UnlockFile.aspx" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="SPUnlockFile_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

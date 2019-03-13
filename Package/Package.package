@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="c235377a-d442-49b1-beb4-d308f0567f08" solutionId="c235377a-d442-49b1-beb4-d308f0567f08" resetWebServer="false" sharePointProductVersion="16.0" name="SPUnlockFile" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="a6b87d62-2b1a-4145-84bd-a4f6a025efed" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="810f1e64-6bba-4586-b7f8-9378c5a168cf" />
+  </projectItems>
+</package>
