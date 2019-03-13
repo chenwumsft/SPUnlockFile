@@ -24,13 +24,12 @@ namespace SPUnlockFile.Layouts.SPUnlockFile
                         try
                         {
                             file.ReleaseLock(file.LockId);
+                            lblText.Text = file.ServerRelativeUrl + " unlocked";
                         }
                         catch (Exception ex)
                         {
                             lblText.Text = ex.Message;
                         }
-
-                        lblText.Text = file.ServerRelativeUrl + " unlocked";
                     }
                     else
                     {
