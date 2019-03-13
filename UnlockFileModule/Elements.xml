@@ -5,7 +5,7 @@
       RegistrationType="List"
       RegistrationId="101"
       Location="EditControlBlock"
-      Title="Unlock">
+      Title="Unlock File">
     <UrlAction
         Url="/_layouts/SPUnlockFile/UnlockFile.aspx?SPListItemId={ItemId}&amp;SPListId={ListId}"/>
   </CustomAction>

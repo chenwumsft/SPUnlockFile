@@ -86,7 +86,9 @@
       <DependentUpon>Feature1.feature</DependentUpon>
     </Content>
     <Content Include="Layouts\SPUnlockFile\UnlockFile.aspx" />
-    <Content Include="UnlockFileModule\Elements.xml" />
+    <Content Include="UnlockFileModule\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

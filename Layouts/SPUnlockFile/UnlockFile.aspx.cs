@@ -17,22 +17,26 @@ namespace SPUnlockFile.Layouts.SPUnlockFile
 
             if(!IsPostBack)
             {
-                if (file.LockId != null)
+                SPSecurity.RunWithElevatedPrivileges(() =>
                 {
-                    try
+                    if (file.LockId != null)
                     {
-                        file.ReleaseLock(file.LockId);
-                    }catch(Exception ex)
-                    {
-                        lblText.Text = ex.Message;
-                    }
+                        try
+                        {
+                            file.ReleaseLock(file.LockId);
+                        }
+                        catch (Exception ex)
+                        {
+                            lblText.Text = ex.Message;
+                        }
 
-                    lblText.Text = file.ServerRelativeUrl + " unlocked";
-                }
-                else
-                {
-                    lblText.Text = file.ServerRelativeUrl + " is not locked";
-                }
+                        lblText.Text = file.ServerRelativeUrl + " unlocked";
+                    }
+                    else
+                    {
+                        lblText.Text = file.ServerRelativeUrl + " is not locked";
+                    }
+                });
             }
         }
     }
