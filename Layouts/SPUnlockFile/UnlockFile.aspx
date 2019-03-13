@@ -12,7 +12,7 @@
 </asp:Content>
 
 <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">
-    <asp:Label ID="lblText" runat="server" />
+    <asp:Label ID="lblText" runat="server" /><asp:Button ID="lbUnlock" Text="Unlock" Enabled="false" runat="server" OnClick="lbUnlock_Click" />
 </asp:Content>
 
 <asp:Content ID="PageTitle" ContentPlaceHolderID="PlaceHolderPageTitle" runat="server">
